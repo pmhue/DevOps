@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  frontend-reactjs:
+    container_name: cons-frontend-reactjs
+    build: ./frontend
+    ports:
+      - "5173:80"
+
+  backend-expressjs:
+    container_name: cons-backend-expressjs
+    build: ./API
+    ports:
+      - "8800:8800"
