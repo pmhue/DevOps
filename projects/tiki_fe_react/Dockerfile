@@ -7,7 +7,8 @@ COPY package.json package-lock.json* ./
 
 RUN npm config set fetch-timeout 300000
 RUN npm config set fetch-retry-maxtimeout 300000
-RUN npm install
+RUN npm install --legacy-peer-deps
+
 
 # Copy toàn bộ code (trừ các mục trong .dockerignore)
 COPY . .
