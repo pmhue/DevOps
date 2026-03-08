@@ -24,7 +24,7 @@ const navigate = useNavigate()
       await login(inputs);
       navigate("/")
     } catch (err) {
-      setErr(err.response.data);
+      setErr(err.response?.data || err.message);
     }
   };
 
