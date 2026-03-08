@@ -1,6 +1,6 @@
 import axios from 'axios'
 
 export const makeRequest = axios.create({
-    baseURL: "https://expressjs.phanminhhue.org:8800/api/",
+    baseURL: "http://178.128.59.178:8800/api/",
     withCredentials: true,
 })
