@@ -19,7 +19,7 @@ app.use((req, res, next) => {
 });
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://reactjs.phanminhhue.org"],
+  origin: ["http://localhost:5173", "https://reactjs.phanminhhue.org:5173"],
 }));
 
 app.use(express.json());
