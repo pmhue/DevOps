@@ -1,0 +1,9 @@
+name: demo-gitaction
+on:
+    workflow_dispatch:
+
+jobs:
+    job_A:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello, world!"
